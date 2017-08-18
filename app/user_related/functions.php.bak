@@ -1,0 +1,15 @@
+<?php
+	function user_details($userid){
+		require("config.php");
+		$get_details = mysqli_query($mysqli,"SELECT * FROM users WHERE user_id='$userid'");
+		$fetch_details = mysqli_fetch_array($get_details);
+		return $fetch_details;
+	}
+
+	function check_duplicate_email($email){
+		require("config.php");
+		$check_email_avail = mysqli_query($mysqli,"SELECT * FROM users WHERE email='$email'");
+		$check_avail_rows = mysqli_num_rows($check_email_avail);
+		return $check_avail_rows
+	}
+?>

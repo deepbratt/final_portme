@@ -1,0 +1,196 @@
+/* theme styles */
+body {
+	padding-top: 40px;
+}
+
+.box {
+	border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px; 
+	border: 1px solid #d5d5d5;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.11);
+	margin-bottom: 3.0%;
+	background: #fff;
+}
+
+.box:before, .box:after {
+	content: "";
+	display: table;
+}
+	
+.box:after {
+	clear: both;
+}
+	
+.box .header {
+	border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px; 
+	position: relative;
+	background: url(../img/nav_bg.png) repeat;
+	box-shadow: inset 0 1px 0 #fff, 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.box .header h4 {
+	position: relative;
+	padding: 9px 0;
+	padding-top: 8px;
+	padding-left: 10px;
+	border-bottom: 1px solid #c2c2c2;
+	margin: 0;
+	font-size: 13px;
+	color: #444;
+	line-height: 20px;
+}
+	
+.box .content {
+	padding: 0;
+	margin: 0;
+}
+
+.content.pad {
+	padding: 20px;	
+}
+
+.box .content:before, .box .content:after {
+	content: "";
+	display: table;
+}
+
+.box .content:after {
+	clear: both;
+}
+
+#cat-holder {
+	width: 400px;
+	position: relative;
+	top: -52px;	
+}
+
+#calendar h2 {
+	font-size: 16px;
+	font-weight: bold;	
+}
+
+.fc-toolbar {
+    margin-bottom: 0em!important;
+    position: relative;
+    top: -44px;
+    padding: 10px;
+    text-align: center;
+}
+
+.fc-toolbar .fc-center {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+
+/* jquery.calendar styles */
+#details-body-content {
+	white-space: pre-wrap;	
+}
+
+#event-type-selected {
+	display: none;	
+}
+
+.modal-backdrop.in {
+    opacity: 0.6;
+}
+
+.modal-content {
+	box-shadow: none;	
+	overflow: hidden;
+}
+
+.modal-footer, .modal-header {
+	background: #efefef;	
+}
+
+.mr-10 {
+	margin-right: 10px;	
+}
+
+.map-embed {
+	width: 100%;
+	height: 300px;	
+}
+
+.loadingDiv {
+	background: url(../img/ajaxloader.gif);
+	margin: 0 auto;	
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+/* will make modal-body scroll on mobile if you have too many fields*/
+.modal-body { 
+   height: 60%;
+}
+
+.modal-body, .modal-body-import { 
+	max-height: 615px;
+    padding: 15px; 
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; 
+ }
+ 
+label {
+	display: block;
+} 
+
+.radio-checkbox {
+	padding-right: 5px;
+} 
+
+.radio-checkbox input {
+	margin-right: 5px;
+}
+
+ /* modal body screen sizes */
+ @media (max-width: 640px) 
+ {
+	.modal-body { 
+		max-height: 180px;
+	}
+ }
+ 
+ @media (max-width: 600px) 
+ {
+	.modal-body { 
+		max-height: 400px;
+	}
+ }
+ 
+ @media (max-width: 480px) 
+ {
+	.modal-body { 
+		max-height: 140px;
+	}
+ }
+ 
+ @media (max-width: 360px) 
+ {
+	.modal-body { 
+		max-height: 400px;
+	}
+ }
+ 
+ @media (max-width: 320px) 
+ {
+	.modal-body { 
+		max-height: 280px;
+	}
+ }
